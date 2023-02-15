@@ -23,7 +23,7 @@
 .menu-items {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 0px 10px;
+	padding: 0px 20px;
 }
 
 .item {
@@ -32,7 +32,7 @@
 
 	flex-grow: 1;
 	min-height: 150px;
-	margin: 10px;
+	margin: 20px;
 }
 
 .item-text {
@@ -70,7 +70,7 @@
 /* Desktop layout */
 @media (min-width: 992px) {
 	.item {
-		width: 30%;
+		width: 25%;
 	}
 
 	.item-text {
