@@ -1,2 +1,6 @@
 # Coding-Assignment-2
-Coursera course: HTML, CSS, and Javascript for Web Developers
+
+## Week 3
+
+<br>
+Coursera course: [HTML, CSS, and Javascript for Web Developers](https://www.coursera.org/learn/html-css-javascript-for-web-developers)
