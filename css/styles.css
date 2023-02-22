@@ -1,109 +1,102 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.menu {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
+a,
+a:hover,
+a:focus {
+	text-decoration: none;
+	color: black;
 }
 
-.menu-header {
+#header-nav {
+	min-height: 67px;
+	width: 100%;
+	border: 0;
+	border-bottom: solid 3px black;
+	border-radius: 0;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#header-nav > .container {
+	margin: 0;
+	padding: 0;
+}
+
+.container > .navbar-header {
+	height: 67px;
+	width: 100vw;
+	padding: 10px 30px;
+	margin: 0;
+	background-color: gray;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: black;
+	border-width: 2px;
+	margin: 4px 0;
+	padding: 9px 5px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: black;
+	height: 4px;
+	width: 30px;
+}
+
+#collapsable-nav {
+	margin: 0;
+}
+
+#nav-list {
+	margin: 0 0 -1px 0;
+	border-top: solid 3px black;
+}
+
+.navbar-default .navbar-nav > li > a {
+	background-color: white;
+	text-align: center;
+	color: black;
+	font-size: 18px;
+	border-bottom: solid 1px black;
+}
+
+#menu {
+	width: 100%;
+	padding: 0 30px;
+}
+
+#menu-header {
 	font-size: 28px;
 	font-weight: bold;
-	text-align: center;
 	margin-bottom: 15px;
 }
 
-.menu-items {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0px 20px;
-}
-
 .item {
+	min-height: 220px;
 	background-color: gray;
-	border: solid 3px black;
-
-	flex-grow: 1;
-	min-height: 150px;
-	margin: 20px;
+	padding: 15px;
+	font-size: 16px;
+	overflow: hidden;
+	margin-bottom: 15px;
 }
 
-.item-text {
-	margin: 10px;
-}
-
-.item-header {
-	margin-left: auto;
-	margin-bottom: 10px;
-
-	font-weight: bold;
-	text-align: center;
-	max-width: 150px;
-	padding: 3px;
-	width: auto;
-	height: auto;
-
-	border-bottom: 2px solid black;
-	border-left: 2px solid black;
-}
-
-#item-header-1 {
-	background-color: pink;
-}
-
-#item-header-2 {
-	background-color: brown;
-	color: white;
-}
-
-#item-header-3 {
-	background-color: burlywood;
+.item h3 {
+	margin-top: 0px;
+	color: black;
 }
 
 /* Desktop layout */
 @media (min-width: 992px) {
-	.item {
-		width: 25%;
-	}
-
-	.item-text {
-		font-size: 20px;
-	}
-
-	.item-header {
-		font-size: 24px;
-	}
 }
 
 /* Tablet layout */
 @media (min-width: 768px) and (max-width: 991px) {
-	.item {
-		width: 45%;
-	}
-
-	.item-text {
-		font-size: 20px;
-	}
-
-	.item-header {
-		font-size: 24px;
-	}
 }
 
 /* Mobile layout */
 @media (max-width: 767px) {
-	.item-text {
-		font-size: 18px;
-	}
-
-	.item-header {
-		font-size: 24px;
-	}
 }
